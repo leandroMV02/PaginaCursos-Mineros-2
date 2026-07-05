@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LMVmineria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#"><spam class="text-warning border border-warning border-3">LMV</spam>mineria</a>
+        <!-- Botón para colapsar en móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Informacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empresas Mineras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-warning" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+      <h1 class="text-uppercase">Somos <spam class="text-warning">LMV</spam>mineria lideres en capacitaciones mineras</h1>
+      <p class="fs-4 fw-medium">Te invitamos a capacitarte con nosotros, contamos con amplia trayectoria y los mejores profesionales a tu
+        disposicion</p>
+      <div>
+        <a href="#" class="btn btn-warning">Cursos</a>
+        <a href="#" class="btn btn-outline-light">Nosotros</a>
+      </div>
+    </section>
+  </header>
+  <!-- Carrusel de Cursos Destacados -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Nuestros Cursos Destacados</h2>
+    <div id="cursoCarrusel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Primer ítem del carrusel -->
+        <div class="carousel-item active">
+          <img src="./img/gestionCamp.png" class="d-block" alt="gestion de campamento">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Gestion de campamento</h5>
+            <p>Implementación de soluciones modulares que permiten una rápida y eficiente instalación en entornos extremos.</p>
+          </div>
+        </div>
+        <!-- Segundo ítem del carrusel -->
+        <div class="carousel-item">
+          <img src="./img/perfoVoladura.jpg" class="d-block" alt="Perforacion Y voladura">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Perforacion y voladura</h5>
+            <p> Romper y excavar formaciones rocosas duras.</p>
+          </div>
+        </div>
+        <!-- Tercer ítem del carrusel -->
+        <div class="carousel-item">
+          <img src="./img/minerales.jpg" class="d-block" alt="Proceso de Oro y Cobre">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Proceso de oro y cobre</h5>
+            <p>Aborda los procesos clave para la obtención de metales puros</p>
+          </div>
+        </div>
+      </div>
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#cursoCarrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cursoCarrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Pie de página (Footer) -->
+  <footer class="text-center py-4 bg-dark text-white">
+    <p class="text-uppercase fw-bold">&copy; 2026 <spam class="text-warning border border-warning border-3">LMV</spam>mineria. Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
