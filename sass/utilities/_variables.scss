@@ -1,0 +1,19 @@
+// Paleta de colores institucional LMVmineria
+$color-primary: #ffa500; // naranja institucional
+$color-dark: #000000;
+$color-white: #ffffff;
+
+// Overlays usados sobre las imágenes de fondo
+$overlay-dark: rgba(0, 0, 0, 0.55);
+$overlay-primary: rgba(255, 140, 0, 0.219);
+
+// Tipografía
+$font-base: 'Segoe UI', Arial, sans-serif;
+
+// Reset global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-base;
+}

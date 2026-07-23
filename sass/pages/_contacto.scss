@@ -1,0 +1,24 @@
+@use "../utilities/variables" as v;
+
+.contacto-datos {
+    li {
+        margin-bottom: 12px;
+        padding-left: 10px;
+        border-left: 3px solid v.$color-primary;
+    }
+}
+
+.contacto-form {
+    .form-control:focus {
+        border-color: v.$color-primary;
+        box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+    }
+
+    .btn {
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}

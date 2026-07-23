@@ -1,0 +1,25 @@
+// Mixin de flexbox reutilizable
+@mixin flex($dir: row, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+// Placeholder reutilizable con @extend
+%full-height {
+    height: 100vh;
+}
+
+// Breakpoints
+@mixin tablet {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
