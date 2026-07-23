@@ -1,0 +1,27 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.historia-img {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.valor-card {
+    background-color: #f8f8f8;
+    border-left: 5px solid v.$color-primary;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+    }
+
+    h3 {
+        color: v.$color-dark;
+        margin-bottom: 10px;
+    }
+}

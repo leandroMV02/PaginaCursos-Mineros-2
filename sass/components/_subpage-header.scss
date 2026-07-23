@@ -1,0 +1,47 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+// Header reducido para Informacion, Empresas, Cursos y Contacto
+.subpage-header {
+    background-color: v.$color-dark;
+
+    .navbar {
+        width: 100%;
+
+        .navbar-brand,
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-link {
+            color: v.$color-white;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+
+            &:hover,
+            &.active {
+                color: v.$color-primary;
+            }
+        }
+    }
+
+    .subpage-hero {
+        @include m.flex(column, center, center);
+        padding: 60px 20px;
+        color: v.$color-white;
+        text-align: center;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            border-bottom: 4px solid v.$color-primary;
+            padding-bottom: 10px;
+            display: inline-block;
+
+            @include m.mobile {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

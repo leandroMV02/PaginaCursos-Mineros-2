@@ -4,7 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LMVmineria</title>
+  <title>LMVmineria - Capacitaciones para el sector minero</title>
+  <meta name="description" content="LMVmineria brinda capacitaciones profesionales en gestión de campamento, perforación y voladura, y procesamiento de minerales para el sector minero de San Juan, Argentina.">
+  <meta name="keywords" content="capacitaciones mineras, cursos minería San Juan, gestión de campamento, perforación y voladura, procesamiento de minerales, empresas mineras San Juan">
+  <meta name="author" content="LeanRMV">
+  <link rel="canonical" href="https://lmvmineria.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="LMVmineria - Capacitaciones para el sector minero">
+  <meta property="og:description" content="Capacitaciones profesionales para el sector minero de San Juan, Argentina.">
+  <meta property="og:image" content="./img/logoPagina.png">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="./img/logoPagina.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
@@ -13,7 +23,7 @@
 <body>
   <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container">
         <!-- Logo -->
         <img src="./img/logoPagina.png" alt="Logo de LMVmineria" class="logo">
@@ -29,19 +39,19 @@
               <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Informacion</a>
+              <a class="nav-link" href="pages/Informacion.html">Informacion</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Empresas Mineras</a>
+              <a class="nav-link" href="pages/Empresas.html">Empresas Mineras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cursos</a>
+              <a class="nav-link" href="pages/Cursos.html">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#Destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-warning" href="#">Contacto</a>
+              <a class="btn btn-warning" href="pages/Contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -50,24 +60,24 @@
 
     <!-- Sección Principal -->
     <section class="hero">
-      <h1 class="text-uppercase">Somos <spam class="text-warning">LMV</spam>mineria lideres en capacitaciones mineras</h1>
+      <h1 class="text-uppercase">Somos <span class="text-warning">LMV</span>mineria lideres en capacitaciones mineras</h1>
       <p class="fs-4 fw-medium">Te invitamos a capacitarte con nosotros, contamos con amplia trayectoria y los mejores profesionales a tu
         disposicion</p>
       <div>
-        <a href="#" class="btn btn-warning">Cursos</a>
-        <a href="#" class="btn btn-outline-light">Nosotros</a>
+        <a href="pages/Cursos.html" class="btn btn-warning">Cursos</a>
+        <a href="pages/Contacto.html" class="btn btn-outline-light">Contacto</a>
       </div>
     </section>
   </header>
   <!-- Carrusel de Cursos Destacados -->
-  <section class="container my-5">
+  <section class="container my-5" id="Destacados">
     <h2 class="text-center mb-4">Nuestros Cursos Destacados</h2>
     <div id="cursoCarrusel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <!-- Primer ítem del carrusel -->
         <div class="carousel-item active">
           <img src="./img/gestionCamp.png" class="d-block" alt="gestion de campamento">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Gestion de campamento</h5>
             <p>Implementación de soluciones modulares que permiten una rápida y eficiente instalación en entornos extremos.</p>
           </div>
@@ -75,7 +85,7 @@
         <!-- Segundo ítem del carrusel -->
         <div class="carousel-item">
           <img src="./img/perfoVoladura.jpg" class="d-block" alt="Perforacion Y voladura">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Perforacion y voladura</h5>
             <p> Romper y excavar formaciones rocosas duras.</p>
           </div>
@@ -83,7 +93,7 @@
         <!-- Tercer ítem del carrusel -->
         <div class="carousel-item">
           <img src="./img/minerales.jpg" class="d-block" alt="Proceso de Oro y Cobre">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Proceso de oro y cobre</h5>
             <p>Aborda los procesos clave para la obtención de metales puros</p>
           </div>
@@ -103,7 +113,7 @@
 
   <!-- Pie de página (Footer) -->
   <footer class="text-center py-4 bg-dark text-white">
-    <p class="text-uppercase fw-bold">&copy; 2026 <spam class="text-warning border border-warning border-3">LMV</spam>mineria. Todos los derechos reservados.</p>
+    <p class="text-uppercase fw-bold">&copy; 2026 <span class="text-warning border border-warning border-3">LMV</span>mineria. Todos los derechos reservados.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
